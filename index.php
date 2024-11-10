@@ -4,7 +4,8 @@ $arr = [1, 2, 3, 7, 31, 4, 1, 8, 6];
 
 // array length
 
-var_dump($arr);
+$length = count($arr);
+var_dump($length);
 
 echo '<br>';
 
@@ -18,8 +19,11 @@ echo '<br>';
 
 // Sum of 4,5,6 elements
 
-$sum_elements = $arr[4] + $arr[5] + $arr[6];
-print_r($sum_elements);
+// $sum_elements = $arr[3] + $arr[4] + $arr[5];
+// print_r($sum_elements);
+
+$sum = array_sum(array_slice($arr, 3,3));
+print_r($sum);
 
 echo '<br>';
 
